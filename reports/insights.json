@@ -1,0 +1,205 @@
+{
+  "execution_id": "EXEC_20250129_143000",
+  "timestamp": "2025-01-29T14:30:00Z",
+  "query": "Analyze ROAS drop in last 30 days",
+  "status": "success",
+  "insights": [
+    {
+      "insight_id": "INS_ROAS_001",
+      "title": "ROAS declined by 22.5% over 30 days",
+      "description": "Return on Ad Spend declined significantly from a 30-day baseline of 3.45 to current 7-day average of 2.67, representing a critical performance drop that directly impacts overall campaign ROI and efficiency.",
+      "category": "Financial Performance",
+      "evidence": {
+        "baseline_roas": 3.45,
+        "baseline_period": "30 days average",
+        "comparison_roas": 2.67,
+        "comparison_period": "7 days average",
+        "change_pct": -22.5,
+        "absolute_change": -0.78,
+        "affected_spend": "HIGH",
+        "sample_size": 1250,
+        "confidence_baseline": "HIGH"
+      },
+      "confidence": 0.95,
+      "impact": "critical",
+      "supporting_metrics": [
+        "CTR declined 18.5% (2.1% → 1.71%)",
+        "CPC increased 8% ($0.93 → $1.01)",
+        "Conversion rate stable at 2.8%",
+        "Frequency increased 35%"
+      ],
+      "validation_score": 0.93,
+      "score_components": {
+        "confidence": 0.95,
+        "evidence_strength": 0.95,
+        "statistical_significance": 0.85,
+        "business_relevance": 0.95
+      },
+      "validation_status": "VALIDATED",
+      "validation_notes": "Strong quantitative evidence with large effect size (22.5% > 20%). Multiple supporting metrics. Critical direct business impact on ROI. Highly validated insight.",
+      "ranking": 1,
+      "actionability": "HIGH"
+    },
+    {
+      "insight_id": "INS_CTR_002",
+      "title": "Click-Through Rate declined by 18.5%",
+      "description": "Click-Through Rate dropped from 2.1% to 1.71%, a significant decline suggesting creative underperformance or audience fatigue from extended exposure to same ad variants.",
+      "category": "Engagement",
+      "evidence": {
+        "baseline_ctr": 2.1,
+        "comparison_ctr": 1.71,
+        "change_pct": -18.5,
+        "absolute_change": -0.39,
+        "frequency_change_pct": 35,
+        "affected_campaigns": 3,
+        "sample_size": 1250
+      },
+      "confidence": 0.87,
+      "impact": "high",
+      "supporting_metrics": [
+        "Creative age: 60+ days (same variants)",
+        "Frequency increased 35% while impressions only up 12%",
+        "Decline concentrated in existing customer segments",
+        "New audience segments showing stable CTR"
+      ],
+      "validation_score": 0.87,
+      "score_components": {
+        "confidence": 0.87,
+        "evidence_strength": 0.85,
+        "statistical_significance": 0.80,
+        "business_relevance": 0.90
+      },
+      "validation_status": "VALIDATED",
+      "validation_notes": "Clear pattern with strong supporting evidence. Creative fatigue hypothesis well-supported by frequency vs. impression gap. Valid with actionable recommendations.",
+      "ranking": 2,
+      "actionability": "HIGH"
+    },
+    {
+      "insight_id": "INS_CPC_003",
+      "title": "Cost Per Click increased by 8%",
+      "description": "CPC increased from $0.93 to $1.01, indicating rising click acquisition costs likely due to audience saturation and declining ad relevance scores.",
+      "category": "Cost Efficiency",
+      "evidence": {
+        "baseline_cpc": 0.93,
+        "comparison_cpc": 1.01,
+        "change_pct": 8,
+        "cpm_change_pct": 12,
+        "quality_score_trend": "declining"
+      },
+      "confidence": 0.75,
+      "impact": "moderate",
+      "supporting_metrics": [
+        "CPM increased 12% (platform cost rising)",
+        "Quality score declining on high-frequency audiences",
+        "Relevance score impact evident"
+      ],
+      "validation_score": 0.78,
+      "score_components": {
+        "confidence": 0.75,
+        "evidence_strength": 0.80,
+        "statistical_significance": 0.75,
+        "business_relevance": 0.80
+      },
+      "validation_status": "VALIDATED",
+      "validation_notes": "Secondary metric supporting primary ROAS decline. Moderate effect size. Clear efficiency deterioration pattern.",
+      "ranking": 3,
+      "actionability": "MODERATE"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis_id": "HYP_001",
+      "statement": "Creative fatigue is causing CTR and ROAS decline",
+      "description": "Extended exposure to the same creative variants is reducing engagement and conversion rates as audience fatigue sets in, causing the observed CTR drop and contributing to ROAS decline.",
+      "reasoning": "CTR down 18.5% while frequency up 35% is the classic creative fatigue pattern. Frequency increase without proportional impression growth indicates audience saturation and repeated exposure effects.",
+      "supporting_evidence": [
+        "CTR declined 18.5% while frequency increased 35% (classic fatigue indicator)",
+        "Same creative variants served for 60+ days without rotation",
+        "Decline concentrated in high-frequency audience segments",
+        "Engagement metrics declining on specific audiences",
+        "New audience segments showing stable CTR (2.1%), proving creatives still work with fresh audiences"
+      ],
+      "confidence": 0.82,
+      "testable": true,
+      "recommended_test": "Rotate new creative variants and measure CTR/ROAS impact",
+      "test_duration_days": 7,
+      "expected_lift": "12-18% CTR improvement, 8-15% ROAS improvement",
+      "confidence_adjusted": 0.82,
+      "validation_status": "RECOMMENDED FOR TESTING"
+    },
+    {
+      "hypothesis_id": "HYP_002",
+      "statement": "Audience saturation is reducing ad effectiveness",
+      "description": "The available audience for this campaign may be approaching saturation, reducing reach quality and conversion probability as the platform shows ads to increasingly lower-intent users.",
+      "reasoning": "Increases in frequency (35%) significantly exceed impression increases (12%), suggesting the platform is running out of fresh users and recycling to existing audience.",
+      "supporting_evidence": [
+        "Frequency increase (35%) exceeds impression increase (12%) - core saturation signal",
+        "CPM increasing despite volume stability (platform cost rising = quality declining)",
+        "Declining conversion rates specifically on high-frequency users",
+        "Geographic segments saturating faster than others"
+      ],
+      "confidence": 0.75,
+      "testable": true,
+      "recommended_test": "Expand audience segments (lookalike, interest-based) or refresh targeting parameters",
+      "test_duration_days": 14,
+      "expected_lift": "5-10% impression growth, 3-7% CTR improvement",
+      "confidence_adjusted": 0.75,
+      "validation_status": "CONSIDER TESTING"
+    }
+  ],
+  "correlations": [
+    {
+      "metric_a": "Frequency",
+      "metric_b": "CTR",
+      "correlation_coefficient": -0.82,
+      "strength": "STRONG NEGATIVE",
+      "interpretation": "Strong negative correlation: higher ad frequency associates with lower CTR (classic creative fatigue effect). For every 10% increase in frequency, CTR declines ~1.5%.",
+      "statistical_significance": "p < 0.01",
+      "actionability": "HIGH - Clear signal that creative rotation is needed"
+    },
+    {
+      "metric_a": "Creative_Age_Days",
+      "metric_b": "CTR",
+      "correlation_coefficient": -0.79,
+      "strength": "STRONG NEGATIVE",
+      "interpretation": "Older creative variants correlate with lower CTR. Each additional 30 days of creative serving associates with ~2% CTR decline.",
+      "statistical_significance": "p < 0.01",
+      "actionability": "HIGH - Supports creative refresh recommendation"
+    },
+    {
+      "metric_a": "CPM",
+      "metric_b": "Quality_Score",
+      "correlation_coefficient": -0.68,
+      "strength": "MODERATE NEGATIVE",
+      "interpretation": "Higher CPM correlates with lower quality scores, indicating platform is charging more for lower-relevance placements.",
+      "statistical_significance": "p < 0.05",
+      "actionability": "MODERATE - Supports relevance improvement strategy"
+    }
+  ],
+  "quality_metrics": {
+    "total_insights": 3,
+    "total_hypotheses": 2,
+    "high_confidence_insights": 2,
+    "medium_confidence_insights": 1,
+    "average_validation_score": 0.86,
+    "insights_validated": 3,
+    "insights_rejected": 0,
+    "validation_rate": 1.0,
+    "hypotheses_testable": 2,
+    "data_quality": "EXCELLENT"
+  },
+  "summary": {
+    "key_finding": "ROAS decline (22.5%) primarily driven by creative fatigue, evidenced by CTR drop (18.5%) combined with frequency increase (35%), concentrated in existing customer segments",
+    "root_cause": "Creative fatigue from 60+ days of same creative variants",
+    "confidence_level": "HIGH (0.86 average validation score)",
+    "urgency": "CRITICAL (direct revenue impact)",
+    "actionability": "HIGH - Clear, testable recommendations available"
+  },
+  "recommended_next_steps": [
+    "Launch TEST_001: Creative refresh (new designs angle) vs. existing top performer (7-day test, 50/50 budget split)",
+    "Launch TEST_002: Video format vs. static creative (14-day test)",
+    "Monitor CTR and ROAS daily during tests",
+    "Scale winning creative to 60%+ of budget",
+    "Implement creative rotation cadence (new variants every 14 days)"
+  ]
+}

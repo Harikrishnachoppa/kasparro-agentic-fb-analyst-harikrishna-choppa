@@ -1,0 +1,431 @@
+{
+  "execution_id": "EXEC_20250129_143000",
+  "timestamp": "2025-01-29T14:30:07Z",
+  "query": "Analyze ROAS drop in last 30 days",
+  "status": "success",
+  "creatives": [
+    {
+      "creative_id": "CRE_001",
+      "type": "image_ad",
+      "headline": "Rediscover Comfort: New Designs Just Arrived",
+      "body_text": "We've listened to our community. Our latest collection features breakthrough comfort technology and fresh seasonal designs that move with you. Shop the new arrivals now and discover what's changed.",
+      "cta": "Shop New Designs",
+      "insight_addressed": "INS_CTR_002",
+      "hypothesis_addressed": "HYP_001",
+      "reasoning": "Address creative fatigue by introducing fresh designs and messaging angles. Shift focus from 'comfort basics' to 'innovation and new products' to re-engage existing audiences experiencing ad fatigue.",
+      "expected_impact": "12-18% CTR improvement",
+      "expected_roas_lift": "8-15%",
+      "target_audience": "Existing customers, high-frequency users (primary fatigue sufferers)",
+      "format_details": {
+        "type": "image_ad",
+        "image_recommendations": [
+          "Product showcase with model wearing new designs",
+          "Before/after comfort comparison (old vs. new)",
+          "Customer testimonial with product in lifestyle setting"
+        ],
+        "color_scheme": "Warm, inviting tones (warm neutrals, earth tones) reflecting comfort and quality",
+        "text_hierarchy": "Headline emphasizes 'NEW' (strongest trigger), body highlights 'breakthrough' and 'technology', CTA drives action",
+        "production_quality": "HIGH - Professional photography, 1200x628px minimum",
+        "brand_safety": "Include logo, brand colors, maintain tone"
+      },
+      "performance_prediction": {
+        "estimated_ctr_lift": "15%",
+        "estimated_ctr_absolute": "1.97%",
+        "estimated_roas_lift": "10%",
+        "estimated_roas_absolute": 2.94,
+        "confidence": 0.78,
+        "based_on": "Historical creative refresh performance"
+      }
+    },
+    {
+      "creative_id": "CRE_002",
+      "type": "video_ad",
+      "headline": "Feel the Difference",
+      "body_text": "15-second video showcasing the transformation from uncomfortable to confident. Features new comfort technology with emphasis on freedom of movement and all-day wear confidence.",
+      "cta": "Learn More",
+      "insight_addressed": "INS_ROAS_001",
+      "hypothesis_addressed": "HYP_001",
+      "reasoning": "Video increases time-on-page, emotional connection, and engagement significantly. Demonstrates product benefit through visual storytelling, driving higher conversion probability and ROAS. Targets cold/new audiences who haven't experienced creative fatigue.",
+      "expected_impact": "15-25% ROAS improvement",
+      "expected_roas_lift": "18%",
+      "target_audience": "Cold traffic, lookalike audiences, new users",
+      "format_details": {
+        "type": "video_ad",
+        "duration_seconds": 15,
+        "key_scenes": [
+          "0-3s: Problem scene (discomfort, self-consciousness, restricted movement)",
+          "3-8s: Product showcase with close-ups of comfort features, technology details",
+          "8-12s: Benefit demonstration (confidence, freedom, comfortable all-day movement)",
+          "12-15s: Brand messaging + customer testimonial snippet + CTA"
+        ],
+        "music_style": "Upbeat, modern, energetic but not distracting. Builds emotional connection without overpowering message.",
+        "visual_style": "Professional product photography + lifestyle scenes with real customers. Clean cuts, high production value, consistent brand colors",
+        "captions": "Essential (80% watch without sound on mobile)",
+        "production_quality": "HIGH - Professional videography, color grading, music licensing"
+      },
+      "performance_prediction": {
+        "estimated_ctr_lift": "18%",
+        "estimated_ctr_absolute": "2.02%",
+        "estimated_roas_lift": "20%",
+        "estimated_roas_absolute": 3.20,
+        "confidence": 0.72,
+        "caveat": "Video effectiveness varies by audience familiarity. Cold audiences typically show higher lift.",
+        "based_on": "Video performance benchmarks for product category"
+      }
+    },
+    {
+      "creative_id": "CRE_003",
+      "type": "carousel_ad",
+      "headline": "See What's New",
+      "body_text": "Swipe through our latest designs and innovations. Discover new comfort technology and seasonal collections.",
+      "cta": "Explore Collection",
+      "insight_addressed": "INS_CTR_002",
+      "reasoning": "Carousel format allows showcasing multiple product variants and features, increasing engagement by giving users control. Higher CTR due to multiple swipeable cards and interactive nature.",
+      "expected_impact": "13-17% CTR improvement",
+      "expected_roas_lift": "6-12%",
+      "target_audience": "Mid-frequency users, exploratory audiences",
+      "carousel_cards": [
+        {
+          "position": 1,
+          "headline": "New Arrival: Comfort Tech Collection",
+          "description": "Engineered for all-day comfort and confidence",
+          "image_recommendation": "Hero product shot with model",
+          "cta": "Explore"
+        },
+        {
+          "position": 2,
+          "headline": "4 New Designs, 1 Amazing Fit",
+          "description": "Choose your favorite style from our expanded collection",
+          "image_recommendation": "Product grid showing color/style variations",
+          "cta": "View Designs"
+        },
+        {
+          "position": 3,
+          "headline": "Customer Favorite: Now in New Colors",
+          "description": "Best-seller reimagined with breakthrough tech",
+          "image_recommendation": "Customer testimonial photo with product",
+          "cta": "Shop Bestseller"
+        },
+        {
+          "position": 4,
+          "headline": "Fresh Styles for Every Season",
+          "description": "Limited edition seasonal designs",
+          "image_recommendation": "Lifestyle scene showing product in use",
+          "cta": "See Seasonal"
+        }
+      ],
+      "performance_prediction": {
+        "estimated_ctr_lift": "15%",
+        "estimated_ctr_absolute": "1.97%",
+        "estimated_roas_lift": "8%",
+        "estimated_roas_absolute": 2.88,
+        "confidence": 0.75,
+        "based_on": "Carousel performance data"
+      }
+    },
+    {
+      "creative_id": "CRE_004",
+      "type": "image_ad",
+      "headline": "Transform Your Comfort",
+      "body_text": "Experience the breakthrough technology that's changing how people feel. New design. New comfort. New confidence. Limited time offer on new collection.",
+      "cta": "Discover Now",
+      "insight_addressed": "INS_ROAS_001",
+      "reasoning": "Benefit-focused messaging addressing the confidence and comfort angle. Creates urgency with 'limited time' while emphasizing 'breakthrough' and 'new' to combat fatigue.",
+      "expected_impact": "10-14% CTR improvement",
+      "expected_roas_lift": "7-11%",
+      "target_audience": "High-intent audiences, repeat visitors",
+      "format_details": {
+        "type": "image_ad",
+        "image_recommendations": [
+          "Before/after transformation (conceptual or literal)",
+          "Customer success story with product",
+          "Close-up of comfort technology features"
+        ],
+        "color_scheme": "Bold, vibrant accents with clean minimalist background",
+        "urgency_elements": "Limited time call-out, new indicator badge"
+      },
+      "performance_prediction": {
+        "estimated_ctr_lift": "12%",
+        "estimated_ctr_absolute": "1.92%",
+        "estimated_roas_lift": "9%",
+        "estimated_roas_absolute": 2.91,
+        "confidence": 0.73
+      }
+    },
+    {
+      "creative_id": "CRE_005",
+      "type": "image_ad",
+      "headline": "What Changed? Everything.",
+      "body_text": "Our customers told us what they wanted. Listen to what we built. New designs. Upgraded comfort. Same quality you trust. Now in 12 new styles.",
+      "cta": "See What's New",
+      "insight_addressed": "INS_CTR_002",
+      "reasoning": "Customer-centric messaging showing brand listens to community feedback. Emphasizes 'new' while maintaining trust angle. Addresses fatigue with freshness narrative.",
+      "expected_impact": "11-15% CTR improvement",
+      "expected_roas_lift": "5-10%",
+      "target_audience": "Loyal customers, existing purchasers",
+      "performance_prediction": {
+        "estimated_ctr_lift": "13%",
+        "estimated_ctr_absolute": "1.93%",
+        "estimated_roas_lift": "7%",
+        "estimated_roas_absolute": 2.86,
+        "confidence": 0.70
+      }
+    }
+  ],
+  "ab_test_recommendations": [
+    {
+      "test_id": "TEST_001",
+      "test_name": "Creative Refresh vs. Control",
+      "primary_objective": "Validate creative refresh hypothesis",
+      "hypothesis": "New creative messaging addressing creative fatigue will improve CTR vs. existing top-performing creative",
+      "variant_a": {
+        "name": "Fresh Design Angle",
+        "creative_ids": ["CRE_001"],
+        "description": "Emphasizes new designs and innovation"
+      },
+      "variant_b": {
+        "name": "Current Best Performer",
+        "creative_ids": ["Existing_Top_Control"],
+        "description": "Baseline control creative (current winning variant)"
+      },
+      "duration_days": 7,
+      "budget_split": "50/50",
+      "budget_total_usd": 500,
+      "daily_budget_per_variant": 35.71,
+      "success_metric": "CTR",
+      "success_criteria": ">2.5% CTR (baseline: 1.71%)",
+      "sample_size_required": 5000,
+      "sample_size_target": 10000,
+      "statistical_power": 0.80,
+      "confidence_level": 0.95,
+      "minimum_detectible_lift": "10%",
+      "expected_winner": "CRE_001",
+      "expected_lift_pct": "12-18%",
+      "expected_ctr_absolute": "1.97%",
+      "practical_significance": "If CRE_001 wins with CTR 2.0%+, recommended for scaling to 60% of budget",
+      "decision_criteria": [
+        "CRE_001 CTR > 1.9% = SCALE",
+        "CRE_001 CTR 1.8-1.9% = MONITOR & CONTINUE TEST",
+        "CRE_001 CTR < 1.8% = REJECT, TRY DIFFERENT CREATIVE"
+      ],
+      "secondary_metrics": ["CPC", "Conversion Rate", "ROAS"],
+      "follow_up_action": "Winner (if >1.9% CTR) scales to 50% budget for 2 weeks, monitor for ROAS impact"
+    },
+    {
+      "test_id": "TEST_002",
+      "test_name": "Video vs. Static Creative",
+      "primary_objective": "Validate video format effectiveness",
+      "hypothesis": "Video format will achieve higher ROAS than static image creative due to increased engagement and emotional connection",
+      "variant_a": {
+        "name": "15-second Video",
+        "creative_ids": ["CRE_002"],
+        "description": "Emotional storytelling with comfort transformation"
+      },
+      "variant_b": {
+        "name": "Static Image",
+        "creative_ids": ["CRE_001"],
+        "description": "High-performing image creative (from TEST_001 winner)"
+      },
+      "duration_days": 14,
+      "budget_split": "50/50",
+      "budget_total_usd": 800,
+      "daily_budget_per_variant": 28.57,
+      "success_metric": "ROAS",
+      "success_criteria": ">3.2 ROAS (baseline: 2.67)",
+      "sample_size_required": 10000,
+      "sample_size_target": 20000,
+      "statistical_power": 0.85,
+      "confidence_level": 0.95,
+      "minimum_detectible_lift": "12%",
+      "expected_winner": "CRE_002 (Video)",
+      "expected_lift_pct": "15-25%",
+      "expected_roas_absolute": 3.20,
+      "practical_significance": "Video typically shows 15-20% ROAS improvement for product category. If validated, video becomes primary format.",
+      "decision_criteria": [
+        "Video ROAS > 3.0 = PRIMARY FORMAT",
+        "Video ROAS 2.9-3.0 = CONTINUE TESTING",
+        "Video ROAS < 2.9 = VIDEO UNDERPERFORMS, STICK WITH STATIC"
+      ],
+      "secondary_metrics": ["CTR", "Cost per Conversion", "Conversion Rate", "Video Completion Rate"],
+      "follow_up_action": "If video wins, allocate 40% budget to video + 40% static + 20% carousel for 3 weeks"
+    },
+    {
+      "test_id": "TEST_003",
+      "test_name": "Audience Segment Performance",
+      "primary_objective": "Validate that fresh creative specifically addresses fatigue in existing segments",
+      "hypothesis": "Fresh creative performs better with high-frequency users (experiencing fatigue) vs. new audiences who haven't seen previous creatives",
+      "segment_a": {
+        "name": "High-Frequency Existing Customers",
+        "audience_definition": "Existing customers + high engagement history",
+        "description": "Primary fatigue victims"
+      },
+      "segment_b": {
+        "name": "Lookalike & New Audiences",
+        "audience_definition": "Lookalike audiences + website visitors + new contacts",
+        "description": "Fresh audiences without fatigue"
+      },
+      "creative": "CRE_001 (Fresh Design Angle)",
+      "duration_days": 14,
+      "budget_split": "40% segment A / 60% segment B",
+      "success_metric": "ROAS",
+      "expected_insights": [
+        "Segment A: High CTR improvement (15-20%) from fresh creative",
+        "Segment B: Baseline/slight improvement (5-10%), less fatigue factor",
+        "Validates that creative fatigue was primary issue"
+      ],
+      "decision_criteria": [
+        "If Segment A ROAS > Segment B = Creative fatigue hypothesis CONFIRMED",
+        "If Segment A ROAS = Segment B = Other factors also involved",
+        "If Segment A ROAS < Segment B = Re-evaluate root cause"
+      ]
+    }
+  ],
+  "creative_strategy": {
+    "overall_approach": "Refresh messaging to combat creative fatigue and re-engage existing audiences with new design angle while capturing new audiences with emotional storytelling",
+    "strategy_name": "Creative Renewal Initiative",
+    "duration_weeks": 4,
+    "key_messages": [
+      "New designs just arrived",
+      "Breakthrough comfort technology",
+      "Customer-driven innovation",
+      "Confidence through comfort"
+    ],
+    "differentiation_from_current": "Existing creative emphasizes 'comfort basics' and 'everyday wear'. New creative emphasizes 'innovation', 'new designs', and 'transformation' to signal freshness and combat fatigue.",
+    "target_segments": [
+      {
+        "segment_id": 1,
+        "segment_name": "High-Frequency Users",
+        "audience_size": "~150k",
+        "fatigue_level": "HIGH",
+        "rationale": "Most affected by creative fatigue, primary performance decline drivers",
+        "recommended_creative": "CRE_001 (Fresh Designs)",
+        "secondary_creative": "CRE_003 (Carousel)",
+        "expected_ctr_improvement": "15-20%",
+        "expected_roas_improvement": "10-15%"
+      },
+      {
+        "segment_id": 2,
+        "segment_name": "Cold & New Audiences",
+        "audience_size": "~250k",
+        "fatigue_level": "NONE",
+        "rationale": "No prior exposure to creatives, need strong emotional connection, higher conversion potential",
+        "recommended_creative": "CRE_002 (Video)",
+        "secondary_creative": "CRE_004 (Transform)",
+        "expected_ctr_improvement": "18-25%",
+        "expected_roas_improvement": "18-25%"
+      },
+      {
+        "segment_id": 3,
+        "segment_name": "Mid-Frequency Users",
+        "audience_size": "~200k",
+        "fatigue_level": "MODERATE",
+        "rationale": "Some fatigue but not primary victims, good test segment for creative variations",
+        "recommended_creative": "CRE_003 (Carousel)",
+        "secondary_creative": "CRE_001 (Fresh)",
+        "expected_ctr_improvement": "12-17%",
+        "expected_roas_improvement": "8-12%"
+      }
+    ],
+    "budget_allocation": {
+      "week_1": {
+        "test_001_percentage": 30,
+        "test_002_percentage": 0,
+        "test_003_percentage": 0,
+        "control_percentage": 70,
+        "rationale": "Test creative refresh in parallel with control to minimize disruption"
+      },
+      "week_2": {
+        "test_001_percentage": 25,
+        "test_002_percentage": 20,
+        "test_003_percentage": 0,
+        "control_percentage": 55,
+        "rationale": "Add video test while continuing creative refresh test"
+      },
+      "week_3": {
+        "winner_creative": 50,
+        "secondary_creative": 30,
+        "carousel_creative": 15,
+        "control_percentage": 5,
+        "rationale": "Scale winners, test secondary creatives, retire control"
+      },
+      "week_4_onward": {
+        "primary_format": 50,
+        "secondary_format": 30,
+        "carousel_format": 15,
+        "testing_percentage": 5,
+        "rationale": "Stable rotation with continuous testing cadence"
+      }
+    },
+    "rollout_timeline": {
+      "week_1": {
+        "day": "Day 1-7",
+        "action": "Launch TEST_001 (Fresh Design CRE_001 vs. Control)",
+        "budget": "$500",
+        "target": "CRE_001 achieves 1.9%+ CTR",
+        "success_criteria": "CRE_001 performs within 10% of control"
+      },
+      "week_2": {
+        "day": "Day 8-14",
+        "action": "Add TEST_002 (Video CRE_002 vs. Static), continue TEST_001",
+        "budget": "$800",
+        "target": "Video achieves 3.0+ ROAS",
+        "success_criteria": "Video shows positive ROAS trend"
+      },
+      "week_3": {
+        "day": "Day 15-21",
+        "action": "Analyze results, scale winners",
+        "budget": "$1,200",
+        "target": "Identify winning creative formats",
+        "success_criteria": "Clear winner(s) identified with 10%+ lift"
+      },
+      "week_4_onward": {
+        "day": "Day 22+",
+        "action": "Implement steady-state rotation with continuous testing",
+        "budget": "$1,500-2,000/week",
+        "target": "Maintain 2.0%+ CTR, 3.0+ ROAS",
+        "success_criteria": "Metrics sustained above baseline, new creatives tested every 2 weeks"
+      }
+    },
+    "success_metrics": {
+      "immediate_goals": {
+        "timeline": "Weeks 1-2",
+        "ctr": "Return to 2.0%+ (from 1.71%)",
+        "roas": "Improve to 2.85+ (from 2.67)",
+        "action": "Identify winning creative formats"
+      },
+      "monthly_goals": {
+        "timeline": "Weeks 3-4",
+        "ctr": "Achieve 1.95-2.10% (14-23% lift)",
+        "roas": "Achieve 3.00-3.40 (12-27% lift)",
+        "action": "Scale winners, begin rotation cadence"
+      },
+      "quarterly_goals": {
+        "timeline": "Months 2-3",
+        "ctr": "Maintain 2.0%+",
+        "roas": "Maintain 3.0+",
+        "creative_refresh_cadence": "New variants every 2 weeks"
+      }
+    },
+    "creative_rotation_recommendations": {
+      "cadence": "New creative variants every 2 weeks",
+      "rationale": "Prevent creative fatigue from recurring",
+      "testing_approach": "Always test new variant against current best performer",
+      "winner_retention": "Keep winning creative in mix for 4-6 weeks before rotation",
+      "loser_handling": "Retire underperforming creatives immediately"
+    }
+  },
+  "quality_metrics": {
+    "total_creatives_generated": 5,
+    "formats": {
+      "image": 3,
+      "video": 1,
+      "carousel": 1
+    },
+    "total_ab_tests": 3,
+    "creatives_tested": 3,
+    "creatives_high_confidence": 5,
+    "average_expected_ctr_lift": "14%",
+    "average_expected_roas_lift": "11%",
+    "creative_diversity": "HIGH (3 formats, 5 distinct messaging angles)"
+  }
+}
