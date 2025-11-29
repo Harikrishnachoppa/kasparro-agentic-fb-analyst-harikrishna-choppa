@@ -1,0 +1,132 @@
+{
+  "timestamp": "2025-11-28T21:25:07.921331",
+  "query": "Analyze ROAS drop in last 30 days",
+  "creatives": [
+    {
+      "creative_id": "CRE_BASE_001",
+      "type": "image_ad",
+      "format": "single_image",
+      "headline": "Comfort That Lasts All Day",
+      "body_text": "Premium undergarments designed for your lifestyle. Breathable, durable, and stylish. Shop the collection.",
+      "cta": "Shop Now",
+      "rationale": "Baseline performance creative",
+      "target_audience": "Broad audience",
+      "expected_impact": "Control group for testing",
+      "visual_concept": "Hero product shot"
+    },
+    {
+      "creative_id": "CRE_BASE_002",
+      "type": "image_ad",
+      "format": "single_image",
+      "headline": "Limited Time: 20% Off Sitewide",
+      "body_text": "Upgrade your essentials. Premium quality at an unbeatable price. Use code SAVE20 at checkout.",
+      "cta": "Get 20% Off",
+      "rationale": "Promotional creative for conversion",
+      "target_audience": "Cart abandoners + High intent",
+      "expected_impact": "Higher conversion rate",
+      "visual_concept": "Promotional banner overlay"
+    },
+    {
+      "creative_id": "CRE_BASE_003",
+      "type": "carousel_ad",
+      "format": "multi_product",
+      "headline": "Our Best Sellers",
+      "body_text": "Customer favorites, restocked. See what everyone's raving about. 4.8★ average rating.",
+      "cta": "Shop Best Sellers",
+      "rationale": "Product showcase creative",
+      "target_audience": "New customers",
+      "expected_impact": "Strong ROAS performance",
+      "visual_concept": "Top 5 products carousel"
+    }
+  ],
+  "ab_test_recommendations": [
+    {
+      "test_id": "AB_TEST_001",
+      "test_name": "Creative Refresh Impact",
+      "hypothesis": "New creative will improve CTR by 15%+",
+      "variant_a": {
+        "description": "Current creative (control)",
+        "creative_ids": [
+          "CRE_BASE_001"
+        ]
+      },
+      "variant_b": {
+        "description": "Fresh creative with new visuals",
+        "creative_ids": [
+          "CRE_HYP_001_FRESH"
+        ]
+      },
+      "success_metric": "CTR",
+      "target_lift": "15%",
+      "duration_days": 7,
+      "budget_split": "50/50"
+    },
+    {
+      "test_id": "AB_TEST_002",
+      "test_name": "Value vs. Quality Messaging",
+      "hypothesis": "Quality-focused messaging will drive higher ROAS",
+      "variant_a": {
+        "description": "Price/value focused messaging",
+        "creative_ids": [
+          "CRE_BASE_002"
+        ]
+      },
+      "variant_b": {
+        "description": "Quality/comfort focused messaging",
+        "creative_ids": [
+          "CRE_BASE_001"
+        ]
+      },
+      "success_metric": "ROAS",
+      "target_lift": "10%",
+      "duration_days": 14,
+      "budget_split": "50/50"
+    },
+    {
+      "test_id": "AB_TEST_003",
+      "test_name": "Image vs. Video Format",
+      "hypothesis": "Video ads will achieve better engagement",
+      "variant_a": {
+        "description": "Static image ad",
+        "creative_ids": [
+          "CRE_INS_CTR_001_A"
+        ]
+      },
+      "variant_b": {
+        "description": "15-second video ad",
+        "creative_ids": [
+          "CRE_INS_CTR_001_B"
+        ]
+      },
+      "success_metric": "Engagement Rate",
+      "target_lift": "25%",
+      "duration_days": 7,
+      "budget_split": "40/60 (favor video)"
+    },
+    {
+      "test_id": "AB_TEST_004",
+      "test_name": "Audience Expansion Test",
+      "hypothesis": "Broader lookalike audiences maintain efficiency",
+      "variant_a": {
+        "description": "Current LAL 1% audience",
+        "creative_ids": [
+          "CRE_BASE_001"
+        ]
+      },
+      "variant_b": {
+        "description": "LAL 2-3% audience with social proof",
+        "creative_ids": [
+          "CRE_HYP_002_EXPAND"
+        ]
+      },
+      "success_metric": "CPA",
+      "target_lift": "Maintain or improve CPA",
+      "duration_days": 14,
+      "budget_split": "60/40 (favor proven audience)"
+    }
+  ],
+  "summary": {
+    "total_creatives": 3,
+    "total_tests": 4
+  }
+}

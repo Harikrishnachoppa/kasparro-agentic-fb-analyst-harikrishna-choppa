@@ -1,0 +1,97 @@
+# Configuration for Kasparro Agentic FB Analyst
+
+# Data settings
+data_path: 'data/synthetic_fb_ads_undergarments.csv'
+
+# Agent configuration
+agents:
+  planner:
+    enabled: true
+    default_time_window_days: 30
+  
+  data_agent:
+    enabled: true
+    cache_data: false
+  
+  insight_agent:
+    enabled: true
+    max_insights: 20
+  
+  evaluator:
+    enabled: true
+    min_confidence_threshold: 0.6
+    statistical_significance_threshold: 0.05
+  
+  creative_agent:
+    enabled: true
+    max_creatives: 15
+    max_ab_tests: 5
+
+# Brand settings
+brand:
+  name: 'ComfortPlus'
+  product_category: 'undergarments'
+  tone: 'professional and approachable'
+  target_audience: 'adults 25-45'
+
+# Output settings
+output:
+  reports_dir: 'reports'
+  logs_dir: 'logs'
+  save_intermediate_results: true
+  generate_markdown_report: true
+
+# Performance thresholds
+thresholds:
+  # Percentage changes that trigger alerts
+  critical_roas_change: 30
+  critical_ctr_change: 25
+  critical_cpc_change: 35
+  
+  # Minimum sample size for statistical significance
+  min_sample_size: 100
+  
+  # Confidence levels
+  high_confidence: 0.8
+  medium_confidence: 0.6
+  low_confidence: 0.4
+
+# Metric definitions
+metrics:
+  primary:
+    - ROAS
+    - CTR
+    - CPC
+    - Conversion_Rate
+  
+  secondary:
+    - CPM
+    - Impressions
+    - Clicks
+    - Spend
+    - Revenue
+    - Conversions
+
+# Segment definitions
+segments:
+  - Campaign_Name
+  - Creative_Type
+  - Audience_Segment
+  - Device_Type
+  - Placement
+
+# Logging settings
+logging:
+  level: 'INFO'  # DEBUG, INFO, WARNING, ERROR
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  save_logs: true
+
+# Testing settings
+testing:
+  default_ab_test_duration_days: 7
+  default_budget_split: '50/50'
+  min_test_sample_size: 1000
+
+# Version
+version: '1.0.0'
+release_date: '2024-01-15'

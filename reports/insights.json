@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-11-28T21:25:07.921331",
+  "query": "Analyze ROAS drop in last 30 days",
+  "insights": [],
+  "hypotheses": [
+    {
+      "hypothesis_id": "HYP_003",
+      "statement": "Seasonal factors may be influencing performance",
+      "reasoning": "Undergarment purchases often show seasonal patterns based on fashion trends and holidays",
+      "supporting_evidence": [
+        "E-commerce typically shows seasonal variance",
+        "Consumer behavior shifts with seasons"
+      ],
+      "confidence": 0.6,
+      "testable": true,
+      "recommended_test": "Compare with same period last year",
+      "confidence_adjusted": 0.71,
+      "score_components": {
+        "original_confidence": 0.6,
+        "evidence_count": 0.6666666666666666,
+        "testability": 1.0,
+        "specificity": 0.7
+      },
+      "ranking": 1,
+      "validation_notes": "Testable hypothesis"
+    }
+  ],
+  "summary": {
+    "total_insights": 0,
+    "total_hypotheses": 1,
+    "execution_time": 0.115551
+  }
+}
