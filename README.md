@@ -823,9 +823,7 @@ Run: python -m pytest tests/ -v
 
 ---
 
-## License
 
-[Include your license here]
 
 ---
 
