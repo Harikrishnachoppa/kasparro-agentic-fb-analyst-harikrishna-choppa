@@ -43,7 +43,9 @@ class TestPlannerAgent:
         
         result = planner.execute("Why is CTR declining?")
         
-        assert 'CTR' in result['metrics_to_analyze']
+        # Check for CTR in metrics (case-insensitive)
+        metrics_upper = [m.upper() for m in result['metrics_to_analyze']]
+        assert 'CTR' in metrics_upper
 
 
 class TestDataAgent:

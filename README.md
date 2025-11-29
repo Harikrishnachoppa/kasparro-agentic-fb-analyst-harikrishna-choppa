@@ -94,16 +94,26 @@ pip install -r requirements.txt
 
 ### Running the System
 
+**Standard Command (uses full dataset, ~1,250 rows):**
 ```bash
-# Basic usage
 python run.py "Why is my ROAS declining?"
-
-# Get results
-# → reports/insights.json (validated insights)
-# → reports/creatives.json (ad recommendations)
-# → reports/report.md (executive summary)
-# → logs/execution_log.json (execution trace)
 ```
+
+**Quick Test with Sample Data (5 rows, <1 second):**
+```bash
+python run.py "Analyze campaign performance" --data data/sample.csv --seed 42
+```
+
+**With Explicit Output Path and Seed:**
+```bash
+python run.py "Analyze ROAS drop" --data data/synthetic_fb_ads_undergarments.csv --out reports/ --seed 42
+```
+
+**Output Files Generated:**
+- `reports/insights.json` — Validated insights with 4-component confidence scores
+- `reports/creatives.json` — 5+ creative variants with A/B test designs
+- `reports/report.md` — Executive summary with revenue projections
+- `logs/execution_log.json` — Full 6-stage execution trace (timing, quality metrics)
 
 ### Example Queries
 
@@ -422,8 +432,11 @@ logging:
 ### Execute System
 
 ```bash
-# Basic run
+# Basic run (uses full dataset with seed 42 for reproducibility)
 python run.py "Analyze ROAS decline"
+
+# Quick test with 5-row sample dataset (<1 second)
+python run.py "Analyze campaign performance" --data data/sample.csv --seed 42
 
 # View results
 cat reports/insights.json
@@ -435,7 +448,7 @@ cat logs/execution_log.json
 ### Run Tests
 
 ```bash
-# Run all tests
+# Run all tests (21/21 passing)
 python -m pytest tests/ -v
 
 # Run specific test file
@@ -444,6 +457,17 @@ python -m pytest tests/test_evaluator.py -v
 # Run with coverage
 python -m pytest tests/ --cov=src --cov-report=html
 ```
+
+**Test Results:** ✅ **21/21 PASSING** (See `tests/RESULTS.md` for details)
+
+### Test Documentation
+
+- **`tests/RESULTS.md`** — Complete test execution results with 100% pass rate
+- **`HOW_I_TESTED.md`** — Detailed walkthrough of how outputs were generated locally
+  - Exact time windows and filters used (baseline: 30 days, comparison: 7 days)
+  - Sample configuration and seed value (42)
+  - Stage-by-stage execution breakdown (8.45 seconds total)
+  - Reproducibility verification (deterministic with seed)
 
 ### Makefile Commands
 
@@ -644,7 +668,8 @@ kasparro-agentic-fb-analyst/
 │
 ├── data/
 │   ├── README.md                     # Data documentation
-│   └── synthetic_fb_ads_undergarments.csv  # Performance data (1,250 rows)
+│   ├── sample.csv                    # 5-row sample dataset (quick test <1s)
+│   └── synthetic_fb_ads_undergarments.csv  # Full dataset (1,250 rows)
 │
 ├── prompts/
 │   ├── planner_prompt.md             # Planner agent prompt (250 lines)

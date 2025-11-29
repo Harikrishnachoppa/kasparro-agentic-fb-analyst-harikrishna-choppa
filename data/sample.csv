@@ -1,0 +1,6 @@
+date,campaign_name,creative_type,audience_segment,device_type,placement,impressions,clicks,spend,revenue,conversions
+2025-01-25,Engagement Campaign,image,Existing Customers,mobile,feed,15000,315,450.00,1350.00,9
+2025-01-26,Brand Awareness,video,Website Visitors,desktop,stories,12000,204,480.00,960.00,5
+2025-01-27,Conversion Focus,carousel,Lookalike Audience,tablet,sidebar,8000,136,320.00,1088.00,7
+2025-01-28,Retargeting,image,Existing Customers,mobile,feed,18000,486,540.00,1944.00,13
+2025-01-29,Testing,video,Cold Audience,desktop,feed,10000,150,400.00,600.00,3
