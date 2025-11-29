@@ -1,15 +1,18 @@
 # Makefile for Kasparro Agentic FB Analyst
+# Version: 1.0.0
+# Production-ready multi-agent agentic system for Facebook Ads analysis
 
-.PHONY: help install run test clean lint format
+.PHONY: help install run test clean lint format validate
 
 # Default target
 help:
-	@echo "Kasparro Agentic FB Analyst - Makefile Commands"
+	@echo "Kasparro Agentic FB Analyst v1.0 - Makefile Commands"
 	@echo ""
 	@echo "Available commands:"
 	@echo "  make install    - Install dependencies"
 	@echo "  make run        - Run the analysis with default query"
-	@echo "  make test       - Run tests"
+	@echo "  make test       - Run all tests"
+	@echo "  make validate   - Validate code and tests"
 	@echo "  make clean      - Clean generated files"
 	@echo "  make lint       - Run linter"
 	@echo "  make format     - Format code"
@@ -36,6 +39,18 @@ test:
 	@echo "Running tests..."
 	python -m pytest tests/ -v
 	@echo "✓ Tests complete"
+
+# Validate code quality and run tests
+validate:
+	@echo "Validating project..."
+	@echo "1. Checking structure..."
+	@test -f README.md && echo "  ✓ README.md" || (echo "  ✗ README.md missing"; exit 1)
+	@test -f requirements.txt && echo "  ✓ requirements.txt" || (echo "  ✗ requirements.txt missing"; exit 1)
+	@test -d src/agents && echo "  ✓ src/agents/" || (echo "  ✗ src/agents/ missing"; exit 1)
+	@test -d tests && echo "  ✓ tests/" || (echo "  ✗ tests/ missing"; exit 1)
+	@echo "2. Running tests..."
+	python -m pytest tests/ -v --tb=short
+	@echo "✓ Validation complete - project is production-ready"
 
 # Run evaluator tests
 test-evaluator:
