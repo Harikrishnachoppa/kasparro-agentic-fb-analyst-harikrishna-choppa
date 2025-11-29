@@ -1,17 +1,23 @@
 # Configuration for Kasparro Agentic FB Analyst
+# Version: 1.0.0
+# Production-ready configuration for multi-agent system
 
 # Data settings
 data_path: 'data/synthetic_fb_ads_undergarments.csv'
+use_sample_data: true  # Set to false for full dataset
+random_seed: 42
 
 # Agent configuration
 agents:
   planner:
     enabled: true
     default_time_window_days: 30
+    confidence_threshold: 0.5
   
   data_agent:
     enabled: true
     cache_data: false
+    validate_data: true
   
   insight_agent:
     enabled: true
